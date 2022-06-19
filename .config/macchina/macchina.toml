@@ -1,0 +1,2 @@
+theme = "dt"
+show = ["Battery", "Memory", "Host", "Machine", "Distribution", "Terminal"]

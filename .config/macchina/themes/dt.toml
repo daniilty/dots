@@ -1,0 +1,23 @@
+spacing            = 5
+padding            = 5
+hide_ascii         = true
+separator          = "->"
+
+[bar]
+glyph           = "ߋ"
+symbol_open     = '('
+symbol_close    = ')'
+hide_delimiters = true
+visible         = true
+
+[box]
+border          = "rounded"
+visible         = true
+
+[box.inner_margin]
+x               = 1
+y               = 1
+
+[randomize]
+key_color       = false
+separator_color = false
