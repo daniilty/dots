@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
-DIR="$HOME/.config/polybar/"
+# Terminate already running bar instances
+pkill polybar
 
-killall -q polybar
+# Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-polybar -q bar-left -c "$DIR"/config.ini &
-polybar -q bar-right -c "$DIR"/config.ini &
+
+# Launch polybar
+polybar main -c $(dirname $0)/config.ini
+
