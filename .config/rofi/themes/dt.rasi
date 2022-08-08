@@ -4,9 +4,11 @@
     border-col: #1e2229;
     selected-col: #1e2229;
     blue: #aab2ec;
+    green: #aaecad;
+    magenta: #c1aaec;
     fg-col: #e3e3e3;
     fg-col2: #f8f8f8;
     grey: #38474a;
-    width: 600;
+    width: 400;
 }
 

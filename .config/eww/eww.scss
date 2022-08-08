@@ -1,0 +1,267 @@
+*{
+  all: unset;
+}
+
+$background: #181b21;
+$foreground: #e3e3e3;
+
+$black: #1e2229;
+$gray: #38474a;
+$red: #ecaaaa;
+$green: #aaecad;
+$yellow: #ece5aa;
+$blue: #aab2ec;
+$magenta: #c1aaec;
+$cyan: #aaecdf;
+$white: $foreground;
+
+.eww_bar{
+  background-color: $background;
+  padding: .5rem;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.launcher_icon{
+    color: $magenta;
+    font-family: "Material Design Icons-Regular";
+    font-size: 1.7em;
+    padding: 1rem 0 1rem 0;
+}
+
+.works {
+  font-family: "Material Design Icons-Regular";
+  padding: 15px;
+  background-color: $black;
+  border-radius: 10px;
+  box-shadow:  3px 3px 6px #181c21,
+             -3px -3px 6px #242831;
+}
+
+.0 , .01, .02, .03, .04, .05, .06, .07,
+.011, .022, .033, .044, .055, .066, .077{
+  margin: .55rem 0 .55rem 0;
+}
+
+.0 {
+  color: $gray;
+}
+
+.01, .02, .03, .04, .05, .06, .07 {
+  color: $yellow;
+}
+
+.011,
+.022,
+.033,
+.044,
+.055,
+.066,
+.077 {
+  color: $magenta;
+}
+
+.0:nth-child(1),
+.0:nth-child(3){
+  font-size: 1.5em;
+}
+.0:nth-child(2){
+  font-size: 1.5em;
+}
+.0:nth-child(4),
+.0:nth-child(5){
+  font-size: 1.5em;
+}
+.0:nth-child(6){
+  font-size: 1.5em;
+}
+.0:nth-child(7){
+  font-size: 1.5em;
+}
+.01,
+.011,
+.03,
+.033{
+  font-size: 1.5em;
+}
+.02,
+.022{
+  font-size: 1.5em;
+}
+.04,
+.05,
+.044,
+.055{
+  font-size: 1.5em;
+}
+.06,
+.066{
+  font-size: 1.5em;
+}
+
+// Control Panel
+.control {
+  font-family: FiraCode Nerd Font;
+  font-weight: bold;
+  font-size: 1.0em;
+  color: $blue;
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.battery-icon {
+  font-family: "Material Design Icons-Regular";
+  font-size: 1.5em;
+}
+
+.wifi-icon{
+  font-family: "Material Design Icons-Regular";
+  font-size: 1.5em;
+  padding: 4px;
+}
+
+.wifi-container{
+  background-color: $magenta;
+  color: $background;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.bat-container{
+  margin-top: 15px;
+  padding: 5px;
+  background-color: $green;  
+  color: $background;
+  border-radius: 10px;
+}
+
+.brightness-icon{
+  padding: 0 7px 0 7px;
+  font-family: "Material Design Icons-Regular";
+  font-size: 1.5em;
+}
+
+.brightness-container{
+  margin-top: 15px;
+  padding: 5px;
+  background-color: $yellow;  
+  color: $background;
+  border-radius: 10px;
+}
+
+.volume-icon{
+  padding: 0 7px 0 7px;
+  font-family: "Material Design Icons-Regular";
+  font-size: 1.5em;
+}
+
+.current_volume{
+  font-family: FiraCode Nerd Font;
+  font-weight: bold;
+}
+
+.volume-container{
+  margin-top: 15px;
+  padding: 5px;
+  background-color: $red;  
+  color: $background;
+  border-radius: 10px;
+}
+
+scale trough {
+  all: unset;
+  background-color: $background;
+  border-radius: 10px;
+  min-height: 80px;
+  min-width: 10px;
+  margin: .3rem 0 .3rem 0;
+}
+
+.bribar trough highlight {
+  background-color: $yellow;
+  border-radius: 10px;
+}
+.volbar trough highlight {
+  background-color: $green;
+  border-radius: 10px;
+}
+
+// Clock
+.time {
+  font-family: FiraCode Nerd Font;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: $white;
+  border-radius: 10px;
+  padding: .7rem 0 .5rem 0;
+  margin: .5rem 0 .5rem 0;
+}
+
+.time-min {
+  color: $gray;
+}
+
+// Calendar
+.cal-box {
+  background-color: $black;
+  font-family: FiraCode Nerd Font;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 10px;
+
+  .cal-inner-box {
+      padding: 1rem 1rem .2rem;
+
+      .cal {
+          &.highlight {
+              padding: 10rem;
+          }
+
+          padding: .8rem .25rem 0rem;
+          margin-left: 10px;
+      }
+  }
+}
+
+calendar:selected {
+  color: $blue;
+}
+
+calendar.header {
+  color: $blue;
+  font-weight: bold;
+}
+
+calendar.button {
+  color: $magenta;
+}
+
+calendar.highlight {
+  color: $magenta;
+  font-weight: bold;
+}
+
+calendar:indeterminate {
+  color: $background;
+}
+
+// Powermenu
+.button-bspres, .button-reb, .button-lock,
+.button-quit, .button-off{
+  padding: .5rem .2rem .3rem .2rem;
+}
+.button-off{
+  margin-bottom: .5rem;
+  color: $red;
+}
+.button-bspres{
+  color: $green;
+}
+.button-reb{
+  color: $yellow
+}
+.button-quit{
+  color: $magenta;
+}
+.button-lock{
+  color: $blue;
+}
