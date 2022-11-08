@@ -60,7 +60,7 @@
           :class "volume-container"	
 			    :halign "center"		
 	(button   :onclick "scripts/popup audio"
-            :class "volume-icon" "󰎈")
+   :class "volume-icon" "墳")
   			(label :class "current_volume" 
 			  	   :text current_volume)))
 (defpoll current_volume :interval "1s" "amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print substr( $2, 1, length($2)-1) }'")
@@ -148,6 +148,7 @@
 	:monitor 0
 	:reserve (struts :distance "70px" 
 					 :side "left")
+  :windowtype "dock"
 	:wm-ignore false
 	:hexpand "false"
 	:vexpand "false"
