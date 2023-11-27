@@ -2,16 +2,16 @@
 
 configuration {
   modi: "drun";
-  lines: 3;
-  font: "Fira Code Medium 13";
+  lines: 2;
+  font: "FiraCode Nerd Font Ret 12";
   show-icons: false;
   icon-theme: "Haptic Dark";
-  terminal: "st";
+  terminal: "kitty";
   drun-display-format: "{name}";
   location: 0;
   disable-history: false;
   hide-scrollbar: true;
-  display-drun: "󰗍 run ";
+  display-drun: "󰗍 run";
 }
 
 element-text, element-icon , mode-switcher {
@@ -21,10 +21,10 @@ element-text, element-icon , mode-switcher {
 
 window {
   height: 280px;
-  border: 3px;
-  location: northwest;
-  x-offset: 82px;
-  y-offset: 12px;
+  border: 1px;
+  location: center;
+  x-offset: 0px;
+  y-offset: 0px;
   border-color: @border-col;
   background-color: @bg-col;
   border-radius: 6px;
@@ -36,17 +36,17 @@ mainbox {
 
 inputbar {
   children: [prompt,entry];
-  background-color: @green;
-  color: @bg-col;
-  border-radius: 5px;
+  background-color: @bg-col;
+  color: @green;
+  border-radius: 4px;
   font: "Fira Code Bold 13";
   padding: 2px;
 }
 
 prompt {
-  background-color: @green;
+  background-color: @bg-col;
   padding: 6px;
-  text-color: @bg-col;
+  text-color: white;
   border-radius: 5px;
   margin: 20px 0px 0px 20px;
 }
@@ -59,8 +59,8 @@ textbox-prompt-colon {
 entry {
   padding: 6px;
   margin: 20px 0px 0px 10px;
-  text-color: @bg-col;
-  background-color: @green;
+  background-color: @bg-col;
+  color: white;
 }
 
 listview {
@@ -84,8 +84,8 @@ element-icon {
 
 element selected {
   border-radius: 5px;
-  text-color: @fg-col2;
-  background-color: @bg-col-light;
+  text-color: @bg-col;
+  background-color: @magenta;
 }
 
 mode-switcher {

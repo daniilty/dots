@@ -72,7 +72,7 @@ ZSH_THEME="rounded"
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:/home/daniilty/.local/bin/
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:/home/daniilty/.local/bin/:/home/dturaev/.cargo/bin
 alias nv=nvim
 
 # User configuration
@@ -108,4 +108,3 @@ alias nv=nvim
 
 export EDITOR=nvim
 
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx

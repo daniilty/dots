@@ -1,0 +1,106 @@
+@theme "dt"
+
+configuration {
+  modi: "drun";
+  lines: 3;
+  font: "Fira Code Medium 13";
+  show-icons: false;
+  icon-theme: "Haptic Dark";
+  terminal: "st";
+  drun-display-format: "{name}";
+  location: 0;
+  disable-history: false;
+  hide-scrollbar: true;
+  display-drun: "󰗍 run ";
+}
+
+element-text, element-icon , mode-switcher {
+  background-color: inherit;
+  text-color:       inherit;
+}
+
+window {
+  height: 280px;
+  border: 3px;
+  location: northwest;
+  x-offset: 82px;
+  y-offset: 12px;
+  border-color: @border-col;
+  background-color: @bg-col;
+  border-radius: 6px;
+}
+
+mainbox {
+  background-color: @bg-col;
+}
+
+inputbar {
+  children: [prompt,entry];
+  background-color: @green;
+  color: @bg-col;
+  border-radius: 5px;
+  font: "Fira Code Bold 13";
+  padding: 2px;
+}
+
+prompt {
+  background-color: @green;
+  padding: 6px;
+  text-color: @bg-col;
+  border-radius: 5px;
+  margin: 20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  str: ":";
+}
+
+entry {
+  padding: 6px;
+  margin: 20px 0px 0px 10px;
+  text-color: @bg-col;
+  background-color: @green;
+}
+
+listview {
+  border: 0px 0px 0px;
+  padding: 6px;
+  margin: 10px;
+  columns: 1;
+  lines: 4;
+  background-color: @bg-col;
+}
+
+element {
+  padding: 10px;
+  background-color: @bg-col;
+  text-color: @fg-col;
+}
+
+element-icon {
+  size: 25px;
+}
+
+element selected {
+  border-radius: 5px;
+  text-color: @fg-col2;
+  background-color: @bg-col-light;
+}
+
+mode-switcher {
+  spacing: 0;
+}
+
+button {
+  padding: 10px;
+  background-color: @bg-col-light;
+  text-color: @grey;
+  vertical-align: 0.5; 
+  horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @bg-col;
+  text-color: @blue;
+}
