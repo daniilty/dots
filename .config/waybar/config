@@ -1,13 +1,13 @@
 {
     // "layer": "top", // Waybar at top layer "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 35, // Waybar height (to be removed for auto height)
+    "height": 33, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 10, // Gaps between modules (4px)
     "layer": "top",
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "network", "backlight", "battery", "clock", "tray", "sway/language"],
+    "modules-right": ["pulseaudio", "backlight", "network", "battery", "clock", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -26,18 +26,18 @@
     //     }
     // },
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
         "timezone": "Europe/Kaliningrad",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt> ",
-        "format-alt": "{:%Y-%m-%d} "
+        "format-alt": "{:%Y-%m-%d}"
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["󰃠"]
+        "format": "<span font='15'>{icon}</span>",
+        "format-alt": "BLT {percent}%",
+        "format-icons": ["", "", "", "", ""]
     },
     "battery": {
         "states": {
@@ -45,38 +45,39 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon} ",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}%  ",
-        "format-alt": "{time} {icon} ",
+        "format": "<span font='9'>{icon}</span>",
+        "format-charging": "<span font='9'></span>",
+        "format-plugged": "<span font='15'></span>",
+        "format-alt": "BAT {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [ "", "", "", "", "", "", "", "", "", "" ]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid}   ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr}  ",
-        "format-linked": "{ifname} (No IP)  ",
-        "format-disconnected": "Disconnected ⚠ ",
-        "format-alt": "{ifname}: {ipaddr}/{cidr} "
+        "format-wifi": "<span font='18'></span>",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "<span font='15'>睊</span>",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        "format": "{volume}% {icon}",
+        "format": "<span font='15'>{icon}</span>",
         "format-icons": {
-            "headphone": "",
+            "headphone": "",
             "hands-free": "",
-            "headset": "",
+            "headset": "",
             "phone": "",
             "portable": "",
-            "car": "",
+            "car": " ",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "format-muted": "<span font='15'></span>",
+        "format-alt": "SND {volume}%",
     },
   "hyprland/workspaces": {
-     "format": "{icon}",
+     "format": "<span font='13'>{icon}</span>",
      "on-scroll-up": "hyprctl dispatch workspace e+1",
      "on-scroll-down": "hyprctl dispatch workspace e-1",
      "on-click": "activate",

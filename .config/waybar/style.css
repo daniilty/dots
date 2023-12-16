@@ -1,8 +1,9 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "FiraCode Nerd Font";
-    font-size: 13px;
+    font-family: "FiraCode NF", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
     min-height: 0;
 }
 
@@ -53,7 +54,7 @@ window#waybar.chromium {
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+  color: #ece5aa;
 }
 
 #mode {
@@ -65,13 +66,13 @@ window#waybar.chromium {
 #cpu,
 #memory,
 #backlight,
-#custom-network,
+#network,
 #pulseaudio,
 #mode {
     border-radius: 15px;
     border-width: 2px;
     color: white;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 #window {
