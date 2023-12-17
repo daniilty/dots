@@ -31,12 +31,12 @@ window {
 }
 
 mainbox {
-  background-color: @bg-col;
+  background-color: @transparent;
 }
 
 inputbar {
   children: [prompt,entry];
-  background-color: @bg-col;
+  background-color: @transparent;
   color: @green;
   border-radius: 4px;
   font: "Fira Code Bold 13";
@@ -44,7 +44,7 @@ inputbar {
 }
 
 prompt {
-  background-color: @bg-col;
+  background-color: @transparent;
   padding: 6px;
   text-color: white;
   border-radius: 5px;
@@ -59,7 +59,7 @@ textbox-prompt-colon {
 entry {
   padding: 6px;
   margin: 20px 0px 0px 10px;
-  background-color: @bg-col;
+  background-color: @transparent;
   color: white;
 }
 
@@ -69,12 +69,12 @@ listview {
   margin: 10px;
   columns: 1;
   lines: 4;
-  background-color: @bg-col;
+  background-color: @transparent;
 }
 
 element {
   padding: 10px;
-  background-color: @bg-col;
+  background-color: @transparent;
   text-color: @fg-col;
 }
 
@@ -84,7 +84,7 @@ element-icon {
 
 element selected {
   border-radius: 5px;
-  text-color: @bg-col;
+  text-color: #000000;
   background-color: @magenta;
 }
 
