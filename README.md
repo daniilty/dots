@@ -5,10 +5,12 @@
 
 ### Details:
 
-* Terminal: kitty
+* Terminal: kitty/alacritty
 * Shell: zsh
 * Editor: neovim
 * Bar: eww/waybar
 * Wm: bspwm/hyprland
 * Compositor: picom fork by [pijulius](https://github.com/pijulius/picom)
-
+* Terminal multiplexer: tmux(no plugins)
+* Notification manager: mako
+* Launcher: rofi-wayland/rofi
