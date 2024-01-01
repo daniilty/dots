@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "backlight", "network", "battery", "clock", "tray"],
+    "modules-right": ["pulseaudio", "battery", "backlight", "network", "clock", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -35,9 +35,9 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "<span font='15'>{icon}</span>",
+        "format": "<span font='14'>{icon}</span>",
         "format-alt": "BLT {percent}%",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", ""]
     },
     "battery": {
         "states": {
@@ -45,25 +45,26 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "<span font='9'>{icon}</span>",
-        "format-charging": "<span font='9'></span>",
+        "format": "<span font='14'>{icon}</span>",
+        "format-charging": "<span font='9'>󱐋</span>",
         "format-plugged": "<span font='15'></span>",
         "format-alt": "BAT {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": [ "", "", "", "", "", "", "", "", "", "" ]
+        "format-icons": [ "", "", "", "", "" ]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "<span font='18'></span>",
-        "format-ethernet": "{ipaddr}/{cidr}",
+        "format-wifi": "{icon}",
+        "format-ethernet": "󰈀",
         "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP)",
-        "format-disconnected": "<span font='15'>睊</span>",
+        "format-linked": "",
+        "format-disconnected": "󰤭<",
+        "format-icons": [ "󰤟", "󰤢", "󰤥", "󰤨" ],
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        "format": "<span font='15'>{icon}</span>",
+        "format": "<span font='14'>{icon}</span>",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
