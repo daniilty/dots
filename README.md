@@ -2,6 +2,7 @@
 
 ![Screenshot](https://raw.githubusercontent.com/daniilty/dots/master/src/screenshot.png)
 ![Screenshot-Hypr](https://raw.githubusercontent.com/daniilty/dots/master/src/screenshot-hypr.png)
+![Screenshot-Tmux](https://raw.githubusercontent.com/daniilty/dots/master/src/tmux.png)
 
 ### Details:
 
