@@ -1,3 +1,6 @@
+#
+export DISABLE_AUTO_UPDATE=true
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -72,8 +75,14 @@ ZSH_THEME="rounded"
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:/home/daniilty/.local/bin/:/home/dturaev/.cargo/bin
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+export HOMEBREW_REPOSITORY="/opt/homebrew";
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+export PATH=$PATH:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/go/bin:$HOME/go/bin:$HOME/.local/bin/:/Users/dturaev/Library/Python/3.9/bin
 alias nv=nvim
+alias tm="tmux attach-session || tmux"
 
 # User configuration
 
@@ -108,3 +117,4 @@ alias nv=nvim
 
 export EDITOR=nvim
 
+export THEOS=~/theos
